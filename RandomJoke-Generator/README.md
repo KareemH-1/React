@@ -47,5 +47,5 @@ Pull requests are welcome! If you find a bug or have an idea for an improvement,
 This project is **open-source** under the **MIT License**.
 
 ---
-🚀 **Made with ❤️ by [Your Name](https://github.com/KareemH-1)**
+🚀 **Made with ❤️ by [KareemH-1](https://github.com/KareemH-1)**
 
