@@ -7,7 +7,10 @@ Welcome to my **React Projects Repository**! 🚀 This repository contains vario
 ### 1. [React Movies App](https://react-movies-project1.netlify.app/)
 A movie search and discovery app built using React and Appwrite. It allows users to browse trending movies, search for films, and view movie details.
 
-### 2. (More projects to be added...)
+### 2. [Random Joke Generator](https://randomjokegeneratorreact.netlify.app/)
+A **basic Random Joke Generator** built using **React.js**, fetching programming-related jokes from the JokeAPI.
+
+### 3. (More projects to be added...)
 Stay tuned for more React-based projects!
 
 ## 🛠️ Technologies Used
@@ -16,6 +19,7 @@ Stay tuned for more React-based projects!
 - **TailwindCSS** - Utility-first CSS for responsive design
 - **Appwrite** - Backend-as-a-service (used for database and authentication in some projects)
 - **TMDb API** (used in the Movies App)
+- **JokeAPI** (used in the Random Joke Generator)
 
 ## 📖 Learning Approach
 This repository contains **tutorial-based projects** and self-implemented features to improve my React skills. Each project helps me explore different aspects of front-end development, from API integration to UI design and state management.
@@ -48,4 +52,3 @@ If you have any questions, feel free to reach out via **GitHub Issues** or conne
 
 ---
 Made with ❤️ by [KareemH-1](https://github.com/KareemH-1)
-
