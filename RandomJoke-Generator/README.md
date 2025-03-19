@@ -1,12 +1,51 @@
-# React + Vite
+# Random Joke Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **basic Random Joke Generator** built using **React.js**, fetching programming-related jokes from the JokeAPI.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+🔗 **[Try it Out Here](https://randomjokegeneratorreact.netlify.app/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Features
+- Fetches random programming jokes using [JokeAPI](https://v2.jokeapi.dev/).
+- Simple and user-friendly interface.
+- Built with **React.js**.
 
-## Expanding the ESLint configuration
+## 📦 Installation
+### Clone the Repository
+```sh
+git clone https://github.com/your-username/random-joke-generator.git
+cd random-joke-generator
+```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Install Dependencies
+```sh
+npm install
+```
+
+### Run Development Server
+```sh
+npm start
+```
+
+### Build for Production
+```sh
+npm run build
+```
+
+## 🔧 How It Works
+1. Click the **"Click to generate a joke"** button.
+2. The app fetches a **random programming joke** from the API.
+3. The joke is displayed dynamically on the page.
+
+## 🎯 API Used
+- **JokeAPI** → [https://v2.jokeapi.dev/](https://v2.jokeapi.dev/)
+
+## 🤝 Contributing
+Pull requests are welcome! If you find a bug or have an idea for an improvement, feel free to fork and submit a PR.
+
+## 📜 License
+This project is **open-source** under the **MIT License**.
+
+---
+🚀 **Made with ❤️ by [Your Name](https://github.com/KareemH-1)**
+
