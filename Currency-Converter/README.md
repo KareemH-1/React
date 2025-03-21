@@ -22,3 +22,14 @@ A simple and efficient **Currency Converter** built with **React.js**. This web 
 1. Clone this repository:  
    ```sh
    git clone https://github.com/yourusername/react-currency-converter.git
+2. Navigate to the project directory:
+   ```sh
+    cd react-currency-converter
+3. Install dependencies:
+    ```sh
+    npm install
+4. Run the app:
+    ```sh
+    npm start
+
+5. Open http://localhost:3000 in your browser.
