@@ -10,6 +10,10 @@ A movie search and discovery app built using React and Appwrite. It allows users
 ### 2. [Random Joke Generator](https://randomjokegeneratorreact.netlify.app/)
 A **basic Random Joke Generator** built using **React.js**, fetching programming-related jokes from the JokeAPI.
 
+
+### 3. [React Currency Converter](https://reactcurrencyconv.netlify.app/)  
+A **real-time currency converter** using the **Exchangerate-API**. It allows users to convert between currencies with live exchange rates, swap currencies, and view an intuitive UI for seamless conversion.  
+
 ### 3. (More projects to be added...)
 Stay tuned for more React-based projects!
 
