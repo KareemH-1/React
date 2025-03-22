@@ -1,35 +1,60 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [password, setPassword] = useState('')
+  const [status, setStatus] = useState('')
+
+  const checkPassword = (password) => {
+    let status;
+    if (password.length < 8) {
+      status = "Weak";
+    } else if(password.length >= 8 && password.length <= 12) {
+      status = "Medium";
+    } else {
+      status = "Strong";
+    }
+    let ctUppercase =0 , ctLowercase =0, ctNumber =0, ctSpecial =0;
+    for(let i = 0; i < password.length; i++) {
+      if(password[i] >= 'A' && password[i] <= 'Z') {
+        ctUppercase++;
+      }
+      else if(password[i] >= 'a' && password[i] <= 'z') {
+        ctLowercase++;
+      }
+      else if(password[i] >= '0' && password[i] <= '9') {
+        ctNumber++;
+      }
+      else {
+        ctSpecial++;
+      }
+    }
+    if(ctUppercase > 0 && ctLowercase > 0 && ctNumber > 0 && ctSpecial > 0) {
+      status = "Strong";
+    }
+    else if (ctUppercase > 0 && ctLowercase > 0 && ctNumber > 0 || ctUppercase > 0 && ctLowercase > 0 && ctSpecial > 0 || ctUppercase > 0 && ctNumber > 0 && ctSpecial > 0 || ctLowercase > 0 && ctNumber > 0 && ctSpecial > 0) {
+      status = "Medium";
+    }
+    else{
+      status = "Weak";
+    }
+    return status;
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setStatus(checkPassword(password))
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <form onSubmit={handleSubmit}>
+        <input type="text" id="input" value={password} onChange={(e) => setPassword(e.target.value)}/>
+        <button type="submit">Check</button>
+      </form>
+      {status && <p className='output'>The password is {status}</p>}
+    </div>
   )
 }
 
 export default App
+
