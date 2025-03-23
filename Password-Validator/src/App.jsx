@@ -30,60 +30,21 @@ const App = () => {
   };
 
   return (
-    <div style={{ marginLeft: "200px", fontFamily: "Arial, sans-serif" }}>
+    <div className="container">
       <h2>Checking Password Strength in ReactJS</h2>
-      <span>Enter Password: </span>
-      <div style={{ display: "flex", alignItems: "center" }}>
+      <label>Enter Password:</label>
+      <div className="password-input">
         <input
           type={showPassword ? "text" : "password"}
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          style={{
-            padding: "5px",
-            marginRight: "5px",
-            border: "1px solid #ccc",
-            borderRadius: "5px",
-          }}
         />
-        <span
-          onClick={() => setShowPassword(!showPassword)}
-          style={{
-            cursor: "pointer",
-            fontSize: "18px",
-            color: "#333",
-          }}
-        >
+        <span className="eye-icon" onClick={() => setShowPassword(!showPassword)}>
           {showPassword ? <FaEyeSlash /> : <FaEye />}
         </span>
       </div>
-      <button
-        onClick={validate}
-        style={{
-          padding: "5px 10px",
-          marginTop: "10px",
-          cursor: "pointer",
-        }}
-      >
-        Validate
-      </button>
-      <br />
-      {errorMessage && (
-        <span
-          style={{
-            fontWeight: "bold",
-            color:
-              errorMessage === "Strong Password"
-                ? "green"
-                : errorMessage === "Medium Password"
-                ? "orange"
-                : "red",
-            display: "block",
-            marginTop: "10px",
-          }}
-        >
-          {errorMessage}
-        </span>
-      )}
+      <button onClick={validate}>Validate</button>
+      {errorMessage && <span className={`message ${errorMessage.toLowerCase().replace(" ", "-")}`}>{errorMessage}</span>}
     </div>
   );
 };
