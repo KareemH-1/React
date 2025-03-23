@@ -14,6 +14,9 @@ A **basic Random Joke Generator** built using **React.js**, fetching programming
 ### 3. [React Currency Converter](https://reactcurrencyconv.netlify.app/)  
 A **real-time currency converter** using the **Exchangerate-API**. It allows users to convert between currencies with live exchange rates, swap currencies, and view an intuitive UI for seamless conversion.  
 
+### 4. [React Password Validator](https://reactpassvalidator.netlify.app/)
+A simple password strength validator built with React, Vite, and Validator.js. It checks password strength and provides real-time validation feedbac
+
 ### 3. (More projects to be added...)
 Stay tuned for more React-based projects!
 
@@ -24,6 +27,7 @@ Stay tuned for more React-based projects!
 - **Appwrite** - Backend-as-a-service (used for database and authentication in some projects)
 - **TMDb API** (used in the Movies App)
 - **JokeAPI** (used in the Random Joke Generator)
+- **Validator.js** – For password validation.
 
 ## 📖 Learning Approach
 This repository contains **tutorial-based projects** and self-implemented features to improve my React skills. Each project helps me explore different aspects of front-end development, from API integration to UI design and state management.
