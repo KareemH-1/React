@@ -16,13 +16,11 @@ function App() {
   } 
   
   return ( 
-    <div style={{ 
-      marginLeft: '200px', 
-    }}> 
+    <div> 
       <pre> 
         <h2>Credit Card Validator</h2> 
         <span>Enter CreditCard: </span><input type="text" 
-        onChange={(e) => validateCreditCard(e.target.value)}></input> <br /> 
+        onChange={(e) => validateCreditCard(e.target.value)} placeholder='Enter CreditCard'></input> <br /> 
         <span style={{ 
           fontWeight: 'bold', 
           color: 'red', 
