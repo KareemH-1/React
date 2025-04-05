@@ -19,6 +19,11 @@ div{
   font-size: 16px;
   font-weight: 400;
   box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+div:hover{
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05) translateY(-5px);
 }
 pre {
   background-color: #191925;
