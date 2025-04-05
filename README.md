@@ -20,7 +20,7 @@ A simple password strength validator built with React, Vite, and Validator.js. I
 A lightweight and responsive credit card validator using React and Validator.js. It offers real-time validation of credit card numbers with clean UI feedback and instant results.
 
 ### 6. (More projects to be added...)
-Stay tuned for more React-based projects!
+more react projects are to be added
 
 ## 🛠️ Technologies Used
 - **React** - Component-based UI development
