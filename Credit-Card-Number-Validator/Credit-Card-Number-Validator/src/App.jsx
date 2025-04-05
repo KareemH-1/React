@@ -5,13 +5,16 @@ import validator from 'validator'
 function App() {
  
   const [errorMessage, setErrorMessage] = useState('') 
+  const [isValid, setIsValid] = useState(false)
     
   const validateCreditCard = (value) => { 
     
     if (validator.isCreditCard(value)) { 
       setErrorMessage('Valid CreditCard Number') 
+      setIsValid(true)
     } else { 
-      setErrorMessage('Enter valid CreditCard Number!') 
+      setErrorMessage('Enter valid CreditCard Number!')
+      setIsValid(false)
     } 
   } 
   
@@ -23,11 +26,12 @@ function App() {
         onChange={(e) => validateCreditCard(e.target.value)} placeholder='Enter CreditCard'></input> <br /> 
         <span style={{ 
           fontWeight: 'bold', 
-          color: 'red', 
-        }}>{errorMessage}</span> 
+          color: isValid ? 'green' : 'red', 
+        }}>{errorMessage}</span>
       </pre> 
     </div> 
   )
 }
 
 export default App
+
