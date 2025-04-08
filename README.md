@@ -11,7 +11,7 @@ A movie search and discovery app built using React and Appwrite. It allows users
 A **basic Random Joke Generator** built using **React.js**, fetching programming-related jokes from the JokeAPI.
 
 ### 3. [React Currency Converter](https://reactcurrencyconv.netlify.app/)  
-A **real-time currency converter** using the **Exchangerate-API**. It allows users to convert between currencies with live exchange rates, swap currencies, and view an intuitive UI for seamless conversion.  
+A **real-time currency converter** using the **Exchangerate-API**. It allows users to convert between currencies with live exchange rates, swap currencies, and view an intuitive UI for seamless conaversion.  
 
 ### 4. [React Password Validator](https://reactpassvalidator.netlify.app/)
 A simple password strength validator built with React, Vite, and Validator.js. It checks password strength and provides real-time validation feedback.
